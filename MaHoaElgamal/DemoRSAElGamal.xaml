@@ -1,0 +1,244 @@
+﻿<Window x:Class="RSA_ELGAMAL.DemoRSAElGamal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Demo mã hóa Elgamal" Height="589" Width="945" WindowStartupLocation="CenterScreen">
+    <Grid Margin="5,5,5,5">
+        <TabControl HorizontalAlignment="Left" Height="526" Margin="10,10,0,0" VerticalAlignment="Top" Width="907">
+            <TabItem Header="Demo Mã hóa Elgamal">
+                <Grid  Margin="5,5,5,5">
+                    <GroupBox FontSize="16" FontWeight="Bold" Background="#FFE5E5E5" Header="Tạo khóa" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="289"/>
+                    <RadioButton Content="Tự động" x:Name="rd_td" HorizontalAlignment="Left" Margin="14,44,0,0" VerticalAlignment="Top" Checked="rd_td_Checked"/>
+                    <RadioButton Content="Tùy chọn" x:Name="rd_tc" HorizontalAlignment="Left" Margin="14,64,0,0" VerticalAlignment="Top" Checked="rd_tc_Checked"/>
+                    <Label Content="Public key (p,a,y)" HorizontalAlignment="Left" Margin="14,98,0,0" VerticalAlignment="Top"/>
+                    <Label Content="(Số nguyên tố) p = " HorizontalAlignment="Left" Margin="48,131,0,0" VerticalAlignment="Top"/>
+                    <Label Content="(Số alpha) a = " HorizontalAlignment="Left" Margin="74,161,0,0" VerticalAlignment="Top"/>
+                    <Label Content="(y= a^x mod p) y = " HorizontalAlignment="Left" Margin="42,196,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Private key (x)" HorizontalAlignment="Left" Margin="14,255,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Số nguyên x =" HorizontalAlignment="Left" Margin="74,278,0,0" VerticalAlignment="Top"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="161,278,0,0" TextWrapping="Wrap" x:Name="So_X" VerticalAlignment="Top" Width="86"/>
+                    <!--<TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="161,131,0,0" TextWrapping="Wrap" x:Name="So_P" VerticalAlignment="Top" Width="86"/>-->
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="161,161,0,0" TextWrapping="Wrap"  x:Name="So_A" VerticalAlignment="Top" Width="86"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="161,196,0,0" TextWrapping="Wrap"  x:Name="So_D" VerticalAlignment="Top" Width="120" IsEnabled="True"/>
+                    <Button Name="bt_taoKhoa" Content="Tạo khóa" HorizontalAlignment="Left" Margin="74,318,0,0" VerticalAlignment="Top" Width="184" Height="28" Click="bt_taoKhoa_Click"/>
+
+                    <GroupBox FontSize="16" FontWeight="Bold" Background="#FFE5E5E5" Header="Mã hóa" HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="284" Margin="304,0,0,0"/>
+
+                    <Label Content="Văn bản gốc" HorizontalAlignment="Left" Margin="320,35,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="89" Margin="320,61,0,0" TextWrapping="Wrap" x:Name="txtBanRo" VerticalAlignment="Top" Width="251"/>
+
+                    <Label Content="Số ngẫu nhiên k =" HorizontalAlignment="Left" Margin="320,170,0,0" VerticalAlignment="Top"/>
+                    <Label Content="(d=a^k mod p) d =" HorizontalAlignment="Left" Margin="320,201,0,0" VerticalAlignment="Top"/>
+                    <Button Name="btMaHoa" Content="Thực hiện mã hóa" HorizontalAlignment="Left" Margin="362,239,0,0" VerticalAlignment="Top" Width="166" Height="27" Click="btMaHoa_Click"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="437,170,0,0" TextWrapping="Wrap" x:Name="So_K" VerticalAlignment="Top" Width="120"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="437,201,0,0" TextWrapping="Wrap" x:Name="So_Y" VerticalAlignment="Top" Width="120" IsEnabled="True"/>
+
+                    <GroupBox FontSize="16" FontWeight="Bold" Background="#FFE5E5E5" Header="Giải mã" HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="283" Margin="601,0,0,0"/>
+
+                    <Label Content="Văn bản mã hóa nhận được:" HorizontalAlignment="Left" Margin="612,35,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="104" Margin="320,318,0,0" TextWrapping="Wrap" x:Name="txt_maHoaBanRo" VerticalAlignment="Top" Width="251" IsEnabled="False"/>
+                    <TextBox HorizontalAlignment="Left" Height="151" Margin="612,61,0,0" TextWrapping="Wrap" x:Name="txt_banMaHoaNhanDuoc" VerticalAlignment="Top" Width="261" IsEnabled="False"/>
+
+                    <TextBox HorizontalAlignment="Left" Height="104" Margin="612,318,0,0" TextWrapping="Wrap" x:Name="txt_banGiaima" VerticalAlignment="Top" Width="261" IsEnabled="False"/>
+                    <Button Name="btGiaiMa" Content="Thực hiện giải mã" HorizontalAlignment="Left" Margin="638,239,0,0" VerticalAlignment="Top" Width="199" Height="27" Click="btGiaiMa_Click"/>
+                    <Label Content="Văn bản được giải mã:" HorizontalAlignment="Left" Margin="612,287,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Văn bản được mã hóa:" HorizontalAlignment="Left" Margin="326,287,0,0" VerticalAlignment="Top"/>
+                    <Button Name="btTaoBanRoMoi" Content="Tạo văn bản mới" HorizontalAlignment="Left" Margin="628,444,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.933,-0.2" Click="btTaoBanRoMoi_Click"/>
+                    <Button Name="btThoat" Content="Thoát" HorizontalAlignment="Left" Margin="754,444,0,0" VerticalAlignment="Top" Width="75" Click="btThoat_Click"/>
+                    <Button Content="Chọn file" HorizontalAlignment="Left" Margin="473,38,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+                    <ComboBox Name="So_P"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Margin="159,131,0,0">
+                        <ComboBoxItem>1009</ComboBoxItem>
+                        <ComboBoxItem>1013</ComboBoxItem>
+                        <ComboBoxItem>1019</ComboBoxItem>
+                        <ComboBoxItem>1087</ComboBoxItem>
+                        <ComboBoxItem>1153</ComboBoxItem>
+                        <ComboBoxItem>1229</ComboBoxItem>
+                        <ComboBoxItem>1297</ComboBoxItem>
+                        <ComboBoxItem>1381</ComboBoxItem>
+                        <ComboBoxItem>1453</ComboBoxItem>
+                        <ComboBoxItem>1021</ComboBoxItem>
+                        <ComboBoxItem>1091</ComboBoxItem>
+                        <ComboBoxItem>1163</ComboBoxItem>
+                        <ComboBoxItem>1231</ComboBoxItem>
+                        <ComboBoxItem>1301</ComboBoxItem>
+                        <ComboBoxItem>1399</ComboBoxItem>
+                        <ComboBoxItem>1459</ComboBoxItem>
+                        <ComboBoxItem>1031</ComboBoxItem>
+                        <ComboBoxItem>1093</ComboBoxItem>
+                        <ComboBoxItem>1171</ComboBoxItem>
+                        <ComboBoxItem>1237</ComboBoxItem>
+                        <ComboBoxItem>1303</ComboBoxItem>
+                        <ComboBoxItem>1409</ComboBoxItem>
+                        <ComboBoxItem>1471</ComboBoxItem>
+                        <ComboBoxItem>1033</ComboBoxItem>
+                        <ComboBoxItem>1097</ComboBoxItem>
+                        <ComboBoxItem>1181</ComboBoxItem>
+                        <ComboBoxItem>1249</ComboBoxItem>
+                        <ComboBoxItem>1307</ComboBoxItem>
+                        <ComboBoxItem>1423</ComboBoxItem>
+                        <ComboBoxItem>1481</ComboBoxItem>
+                        <ComboBoxItem>1039</ComboBoxItem>
+                        <ComboBoxItem>1103</ComboBoxItem>
+                        <ComboBoxItem>1187</ComboBoxItem>
+                        <ComboBoxItem>1259</ComboBoxItem>
+                        <ComboBoxItem>1319</ComboBoxItem>
+                        <ComboBoxItem>1427</ComboBoxItem>
+                        <ComboBoxItem>1483</ComboBoxItem>
+                        <ComboBoxItem>1049</ComboBoxItem>
+                        <ComboBoxItem>1109</ComboBoxItem>
+                        <ComboBoxItem>1193</ComboBoxItem>
+                        <ComboBoxItem>1277</ComboBoxItem>
+                        <ComboBoxItem>1321</ComboBoxItem>
+                        <ComboBoxItem>1429</ComboBoxItem>
+                        <ComboBoxItem>1487</ComboBoxItem>
+                        <ComboBoxItem>1051</ComboBoxItem>
+                        <ComboBoxItem>1117</ComboBoxItem>
+                        <ComboBoxItem>1201</ComboBoxItem>
+                        <ComboBoxItem>1279</ComboBoxItem>
+                        <ComboBoxItem>1327</ComboBoxItem>
+                        <ComboBoxItem>1433</ComboBoxItem>
+                        <ComboBoxItem>1489</ComboBoxItem>
+                        <ComboBoxItem>1061</ComboBoxItem>
+                        <ComboBoxItem>1123</ComboBoxItem>
+                        <ComboBoxItem>1213</ComboBoxItem>
+                        <ComboBoxItem>1283</ComboBoxItem>
+                        <ComboBoxItem>1361</ComboBoxItem>
+                        <ComboBoxItem>1439</ComboBoxItem>
+                        <ComboBoxItem>1493</ComboBoxItem>
+                        <ComboBoxItem>1063</ComboBoxItem>
+                        <ComboBoxItem>1129</ComboBoxItem>
+                        <ComboBoxItem>1217</ComboBoxItem>
+                        <ComboBoxItem>1289</ComboBoxItem>
+                        <ComboBoxItem>1367</ComboBoxItem>
+                        <ComboBoxItem>1447</ComboBoxItem>
+                        <ComboBoxItem>1499</ComboBoxItem>
+                        <ComboBoxItem>1069</ComboBoxItem>
+                        <ComboBoxItem>1151</ComboBoxItem>
+                        <ComboBoxItem>1223</ComboBoxItem>
+                        <ComboBoxItem>1291</ComboBoxItem>
+                        <ComboBoxItem>1373</ComboBoxItem>
+                        <ComboBoxItem>1451</ComboBoxItem>
+                        <ComboBoxItem>1453</ComboBoxItem>
+                        <ComboBoxItem>1459</ComboBoxItem>
+                        <ComboBoxItem>1471</ComboBoxItem>
+                        <ComboBoxItem>1481</ComboBoxItem>
+                        <ComboBoxItem>1483</ComboBoxItem>
+                        <ComboBoxItem>1487</ComboBoxItem>
+                        <ComboBoxItem>1489</ComboBoxItem>
+                        <ComboBoxItem>1493</ComboBoxItem>
+                        <ComboBoxItem>1499</ComboBoxItem>
+                        <ComboBoxItem>1511</ComboBoxItem>
+                        <ComboBoxItem>1523</ComboBoxItem>
+                        <ComboBoxItem>1597</ComboBoxItem>
+                        <ComboBoxItem>1663</ComboBoxItem>
+                        <ComboBoxItem>1741</ComboBoxItem>
+                        <ComboBoxItem>1823</ComboBoxItem>
+                        <ComboBoxItem>1901</ComboBoxItem>
+                        <ComboBoxItem>1993</ComboBoxItem>
+                        <ComboBoxItem>1531</ComboBoxItem>
+                        <ComboBoxItem>1601</ComboBoxItem>
+                        <ComboBoxItem>1667</ComboBoxItem>
+                        <ComboBoxItem>1747</ComboBoxItem>
+                        <ComboBoxItem>1831</ComboBoxItem>
+                        <ComboBoxItem>1907</ComboBoxItem>
+                        <ComboBoxItem>1997</ComboBoxItem>
+                        <ComboBoxItem>1543</ComboBoxItem>
+                        <ComboBoxItem>1607</ComboBoxItem>
+                        <ComboBoxItem>1669</ComboBoxItem>
+                        <ComboBoxItem>1753</ComboBoxItem>
+                        <ComboBoxItem>1847</ComboBoxItem>
+                        <ComboBoxItem>1913</ComboBoxItem>
+                        <ComboBoxItem>1999</ComboBoxItem>
+                        <ComboBoxItem>1549</ComboBoxItem>
+                        <ComboBoxItem>1609</ComboBoxItem>
+                        <ComboBoxItem>1693</ComboBoxItem>
+                        <ComboBoxItem>1759</ComboBoxItem>
+                        <ComboBoxItem>1861</ComboBoxItem>
+                        <ComboBoxItem>1931</ComboBoxItem>
+                        <ComboBoxItem>1553</ComboBoxItem>
+                        <ComboBoxItem>1613</ComboBoxItem>
+                        <ComboBoxItem>1697</ComboBoxItem>
+                        <ComboBoxItem>1777</ComboBoxItem>
+                        <ComboBoxItem>1867</ComboBoxItem>
+                        <ComboBoxItem>1933</ComboBoxItem>
+                        <ComboBoxItem>1559</ComboBoxItem>
+                        <ComboBoxItem>1619</ComboBoxItem>
+                        <ComboBoxItem>1699</ComboBoxItem>
+                        <ComboBoxItem>1783</ComboBoxItem>
+                        <ComboBoxItem>1871</ComboBoxItem>
+                        <ComboBoxItem>1949</ComboBoxItem>
+                        <ComboBoxItem>1567</ComboBoxItem>
+                        <ComboBoxItem>1621</ComboBoxItem>
+                        <ComboBoxItem>1709</ComboBoxItem>
+                        <ComboBoxItem>1787</ComboBoxItem>
+                        <ComboBoxItem>1873</ComboBoxItem>
+                        <ComboBoxItem>1951</ComboBoxItem>
+                        <ComboBoxItem>1571</ComboBoxItem>
+                        <ComboBoxItem>1627</ComboBoxItem>
+                        <ComboBoxItem>1721</ComboBoxItem>
+                        <ComboBoxItem>1789</ComboBoxItem>
+                        <ComboBoxItem>1877</ComboBoxItem>
+                        <ComboBoxItem>1973</ComboBoxItem>
+                        <ComboBoxItem>1579</ComboBoxItem>
+                        <ComboBoxItem>1637</ComboBoxItem>
+                        <ComboBoxItem>1723</ComboBoxItem>
+                        <ComboBoxItem>1801</ComboBoxItem>
+                        <ComboBoxItem>1879</ComboBoxItem>
+                        <ComboBoxItem>1979</ComboBoxItem>
+                        <ComboBoxItem>1583</ComboBoxItem>
+                        <ComboBoxItem>1657</ComboBoxItem>
+                        <ComboBoxItem>1733</ComboBoxItem>
+                        <ComboBoxItem>1811</ComboBoxItem>
+                        <ComboBoxItem>1889</ComboBoxItem>
+                        <ComboBoxItem>1987</ComboBoxItem>
+                        <ComboBoxItem>1993</ComboBoxItem>
+                        <ComboBoxItem>1997</ComboBoxItem>
+                        <ComboBoxItem>1999</ComboBoxItem>
+
+                    </ComboBox>
+
+                </Grid>
+            </TabItem>
+
+            <!--<TabItem Header="Demo mã hóa RSA" >
+                <Grid Margin="5,5,5,5" Background="#FFE5E5E5" >
+                    <Label Content="Tạo khóa " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Name="rd_tdRSA" Content="Tạo khóa tự động" HorizontalAlignment="Left" Margin="51,41,0,0" VerticalAlignment="Top" Checked="rd_tdRSA_Checked"/>
+                    <RadioButton Name="rd_tcRSA" Content="Tạo khóa tùy chọn" HorizontalAlignment="Left" Margin="179,41,0,0" VerticalAlignment="Top" Checked="rd_tcRSA_Checked"/>
+                    <Label Content="Số nguyên tố bí mật: p = " HorizontalAlignment="Left" Margin="77,81,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Số nguyên tố bí mật: q = " HorizontalAlignment="Left" Margin="77,112,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Hàm số Ơle = (p-1)*(q-1): Ф(n) =" HorizontalAlignment="Left" Margin="39,143,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Cặp khóa công khai:" HorizontalAlignment="Left" Margin="19,198,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Số modul công khai: n =" HorizontalAlignment="Left" Margin="82,229,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Số mũ công khai: e =" HorizontalAlignment="Left" Margin="100,260,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Khóa bí mật:" HorizontalAlignment="Left" Margin="19,301,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Số bm t/m de///1 (mod Ф(n)): d =" HorizontalAlignment="Left" Margin="33,332,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="227,84,0,0" TextWrapping="Wrap" Name="rsa_soP" VerticalAlignment="Top" Width="66" PreviewTextInput="rsa_soP_PreviewTextInput"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="227,115,0,0" TextWrapping="Wrap" Name="rsa_soQ" VerticalAlignment="Top" Width="66"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="227,146,0,0" TextWrapping="Wrap" Name="rsa_soPhiN" VerticalAlignment="Top" Width="83"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="227,231,0,0" TextWrapping="Wrap" Name="rsa_soN" VerticalAlignment="Top" Width="83"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="227,263,0,0" TextWrapping="Wrap" Name="rsa_soE" VerticalAlignment="Top" Width="83"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="227,332,0,0" TextWrapping="Wrap" Name="rsa_soD" VerticalAlignment="Top" Width="83"/>
+                    <Button Name="rsa_TaoKhoa" Content="Tạo khóa" Height="26" HorizontalAlignment="Left" Margin="82,381,0,0" VerticalAlignment="Top" Width="194" Click="rsa_TaoKhoa_Click"/>
+                    <Label Content="Mã hóa" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Bản rõ:" HorizontalAlignment="Left" Margin="343,57,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="115" Margin="347,88,0,0" TextWrapping="Wrap" Name="rsa_BanRo" VerticalAlignment="Top" Width="202"/>
+                    <Button Name="rsa_btMaHoa" Content="Thực hiện mã hóa" HorizontalAlignment="Left" Margin="372,220,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.84,0.432" Click="rsa_btMaHoa_Click"/>
+                    <TextBox HorizontalAlignment="Left" Height="132" Margin="347,292,0,0" TextWrapping="Wrap" Name="rsa_BanMaHoa" VerticalAlignment="Top" Width="202"/>
+                    <Label Content="Bản mã hóa" HorizontalAlignment="Left" Margin="343,259,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="115" Margin="612,88,0,0" TextWrapping="Wrap" Name="rsa_banMaHoaGuiDen" VerticalAlignment="Top" Width="265"/>
+                    <TextBox HorizontalAlignment="Left" Height="132" Margin="612,292,0,0" TextWrapping="Wrap" Name="rsa_banGiaiMa" VerticalAlignment="Top" Width="265"/>
+                    <Label Content="Giải mã nhận được bản rõ" HorizontalAlignment="Left" Margin="612,259,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Bản mã hóa nhận được" HorizontalAlignment="Left" Margin="612,57,0,0" VerticalAlignment="Top"/>
+                    <Button Name="rsa_btGiaiMa" Content="Thực hiện giải mã" HorizontalAlignment="Left" Margin="662,220,0,0" VerticalAlignment="Top" Width="176" Click="rsa_btGiaiMa_Click"/>
+                    <Button Content="Mã hóa bản rõ mới" Name="rsa_maHoaBanRoMoi" HorizontalAlignment="Left" Margin="438,449,0,0" VerticalAlignment="Top" Width="158" Click="rsa_maHoaBanRoMoi_Click" Height="26"/>
+                    <Button Content="Thoát" Name="rsa_btThoat" HorizontalAlignment="Left" Margin="632,449,0,0" VerticalAlignment="Top" Height="26" Width="76" Click="rsa_btThoat_Click"/>
+                    <Button Name="rsa_TaoKhoaMoi" Content="Tạo mới" HorizontalAlignment="Left" Margin="306,449,0,0" VerticalAlignment="Top" Width="116" Height="26" Click="rsa_TaoKhoaMoi_Click"/>
+
+                </Grid>
+            </TabItem>-->
+
+        </TabControl>
+
+    </Grid>
+</Window>

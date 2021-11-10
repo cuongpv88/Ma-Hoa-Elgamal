@@ -1,0 +1,81 @@
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe.config
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csprojResolveAssemblyReference.cache
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\App.g.cs
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.g.resources
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.Cache
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.pdb
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.exe
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.pdb
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe.config
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.exe
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.pdb
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csprojResolveAssemblyReference.cache
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\MainWindow.baml
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\MainWindow.g.cs
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\App.g.cs
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.g.resources
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.Cache
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe
+E:\Downloads\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.pdb
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.baml
+J:\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.g.cs
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.baml
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.g.cs
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\App.g.cs
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.g.resources
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.cache
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.exe
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.pdb
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe.config
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.pdb
+D:\DuLieuChung\Downloads\Demo_RSA_ELGAMAL\Demo_RSA_ELGAMAL\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csprojAssemblyReference.cache
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe.config
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.pdb
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csprojAssemblyReference.cache
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.baml
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.g.cs
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\App.g.cs
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.g.resources
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.cache
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.CoreCompileInputs.cache
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.exe
+D:\Năm 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.pdb
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe.config
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.exe
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\bin\Debug\RSA_ELGAMAL.pdb
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csprojAssemblyReference.cache
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.baml
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\DemoRSAElGamal.g.cs
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\App.g.cs
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.g.resources
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.cache
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.csproj.CoreCompileInputs.cache
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.exe
+D:\Nam 4\AN HTTT\Visual Studio\RSA_ELGAMAL\obj\Debug\RSA_ELGAMAL.pdb
+D:\sources\MyCode\elgamal\MaHoaElgamal\bin\Debug\RSA_ELGAMAL.exe.config
+D:\sources\MyCode\elgamal\MaHoaElgamal\bin\Debug\RSA_ELGAMAL.exe
+D:\sources\MyCode\elgamal\MaHoaElgamal\bin\Debug\RSA_ELGAMAL.pdb
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.csproj.AssemblyReference.cache
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\DemoRSAElGamal.baml
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\DemoRSAElGamal.g.cs
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\App.g.cs
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL_MarkupCompile.cache
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.g.resources
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.Properties.Resources.resources
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.csproj.GenerateResource.cache
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.csproj.CoreCompileInputs.cache
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.exe
+D:\sources\MyCode\elgamal\MaHoaElgamal\obj\Debug\RSA_ELGAMAL.pdb
